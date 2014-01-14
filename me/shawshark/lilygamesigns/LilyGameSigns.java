@@ -34,9 +34,9 @@ public class LilyGameSigns extends JavaPlugin {
 	public void onEnable() {
 		saveDefaultConfig();
 		Bukkit.getServer().getPluginManager().registerEvents(new listener(this), this);
-        connect = Bukkit.getServer().getServicesManager().getRegistration(Connect.class).getProvider();
-        connect.registerEvents(new MessageListener(this));
-        saveConfig();
+        	connect = Bukkit.getServer().getServicesManager().getRegistration(Connect.class).getProvider();
+        	connect.registerEvents(new MessageListener(this));
+        	saveConfig();
 		load.loadConfig();
 	}
 	
