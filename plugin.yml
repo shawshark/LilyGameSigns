@@ -1,0 +1,7 @@
+name: LilyGameSigns
+main: me.shawshark.lilygamesigns.LilyGameSigns
+version: 1.0
+depend: [LilyPad-Connect]
+commands:
+  lilygamesigns:
+  debug:
