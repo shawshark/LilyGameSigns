@@ -27,14 +27,12 @@ public class listener implements Listener {
 	public void onsignPlace(SignChangeEvent e) {
 		Player p = e.getPlayer();
 		if(e.getBlock().getState().getType() == Material.SIGN_POST || e.getBlock().getState().getType() == Material.WALL_SIGN){
-			if (e.getPlayer().isOp()) {
 				if(lgs.lilygamesigns.contains(p)) {
 					lgs.signlist.add(new sendsign(e.getLine(1), e.getBlock().getLocation(),
 							e.getLine(0), e.getLine(1), e.getLine(2), e.getLine(3)));
 					p.sendMessage(ChatColor.GRAY + "[" + ChatColor.RED + "LilyGameSigns" + ChatColor.GRAY + "] " + e.getLine(1) + " has been created!");
 				
-				}
-			}	
+				}	
 		}
 	}
 	
