@@ -54,7 +54,7 @@ public class listener implements Listener {
 	        	e.getPlayer().sendMessage(Ingame);
 	        continue;
 	        }else if(s.getLine(0).contains("[FULL]")) {
-	        	e.getPlayer().sendMessage(Full); // Chris changed this to www.
+	        	e.getPlayer().sendMessage(Full);
 	        	continue;
 	        }else if(s.getLine(0).contains("RESTARTING")) {
 	        	e.getPlayer().sendMessage(Restarting);
