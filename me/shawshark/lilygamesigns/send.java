@@ -19,7 +19,7 @@ public class send {
     public void sendinfo(String status) {
 	 	
     	String serverusername = lgs.connect.getSettings().getUsername();
-        String onlineusers = Bukkit.getOnlinePlayers().length + "";
+        String onlinecount = Bukkit.getOnlinePlayers().length + "";
         String maxusers = Bukkit.getMaxPlayers() + "";
         
         try {
@@ -27,7 +27,7 @@ public class send {
         			MessageRequest(Collections.<String> emptyList(), "LilyGameSigns",
         					serverusername 
         					+ ",," + 
-        					onlineusers 
+        					onlinecount
         					+ ",," + 
         					maxusers 
         					+ ",," + 
